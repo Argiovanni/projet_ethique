@@ -1,0 +1,17 @@
+header {
+    background-color: rgb(226, 147, 1);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.nav_logo {
+    background-color: rgb(239, 175, 55);
+}
+
+.p_nav {
+    background-color: rgb(252, 202, 109);
+}
+
+body {
+    background-color: rgba(224, 214, 196, 0.705);
+}
