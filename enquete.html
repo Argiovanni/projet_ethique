@@ -1,100 +1,202 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <title>Ethics Project - Home</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+<html lang="fr">
+<head>
+    <title>Ethics Project - Enquête</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
 
-        <link href="css/main.css" rel="stylesheet"/>
-
-    </head>
-
-    <body>
-        <header>
-            <nav id="navbar-main" 
-             aria-label="Primary navigation" 
-             class="navbar navbar-main navbar-expand-lg fixed-top ">
-
-             <div class="container postion-fluid">
-                <a class="navbar-brand nav_logo btn" href="index.html">Home</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_global">
+<body>
+    <header>
+        <nav id="navbar-main" class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand btn" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_global">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="navbar-collapse collapse p_nav rounded-pill" id="navbar_global">
-                    
-                    <ul class="navbar-nav align-items-lg-center">
-                        <li class="nav-item">
-                            <a href="questionnement.html" style="margin-left:4em">
-                                Questionnement
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="enquete.html" style="margin-left:4em">
-                                Enquête
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="analyse.html" style="margin-left:4em">
-                                Analyse
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="synthese.html" style="margin-left:4em">
-                                Synthèse
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="team.html" style="margin-left:4em">
-                                Notre Équipe
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="sources.html" style="margin-left:4em">
-                                Sources
-                            </a>
-                        </li>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar_global">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="questionnement.html">Questionnement</a></li>
+                        <li class="nav-item"><a class="nav-link" href="enquete.html">Enquête</a></li>
+                        <li class="nav-item"><a class="nav-link" href="analyse.html">Analyse</a></li>
+                        <li class="nav-item"><a class="nav-link" href="synthese.html">Synthèse</a></li>
+                        <li class="nav-item"><a class="nav-link" href="team.html">Notre Équipe</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sources.html">Sources</a></li>
                     </ul>
                 </div>
-                
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-5 mt-5">
+        <section class="container my-5">
+            <h2 class="mb-4">Résultats de l'enquête</h2>
+
+            <p class="lead mb-4">Dans le cadre de cette étude, une enquête a été menée auprès de 28 personnes afin de collecter des données statistiques sur l'utilisation et la compréhension des antivirus. L'objectif principal était d'analyser les perceptions et les pratiques des utilisateurs face à ces outils de sécurité informatique. Les résultats de cette enquête révèlent des éléments préoccupants, notamment une méconnaissance générale du fonctionnement des antivirus, une confiance implicite envers ces logiciels, ainsi que des comportements qui soulèvent des questions éthiques et déontologiques sur la gestion des données personnelles et la protection de la vie privée. Les conclusions de l'enquête nous amènent à réfléchir sur l'impact de l'utilisation des antivirus sur les habitudes des utilisateurs et sur les éventuelles dérives en matière de confidentialité et de sécurité.</p>
+            <br>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h5>Méconnaissance du fonctionnement des antivirus</h5>
+                        <p>71% des répondants ne savent pas comment fonctionne un antivirus ni à quelles informations il a accès. Cela soulève un problème déontologique, car les utilisateurs ne peuvent pas faire un choix éclairé sur un outil qui a des privilèges élevés sur leur système.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <canvas id="antivirusPieChart" class="chart-small"></canvas>
+                </div>
             </div>
 
-        </nav>
-        </header>
-        <main>
-            <!-- Page Content goes here -->
-            <section class="section-header overflow-hidden pt-7 pt-lg-8 pb-9 pb-lg-12">
-                <div class="container">
-                    <h2>page enquête</h2>
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 order-md-2 d-flex align-items-center">
+                    <div>
+                        <h5>Confiance implicite dans les logiciels antivirus</h5>
+                        <p>68% des participants ayant un antivirus l'utilisent sans l'avoir installé eux-mêmes, souvent celui par défaut (Windows Defender). Cela indique qu’ils acceptent par défaut un logiciel ayant des accès étendus, sans s’interroger sur son impact sur la protection des données.</p>
+                    </div>
                 </div>
-            </section>
+                <div class="col-md-6 order-md-1 text-center">
+                    <canvas id="autoInstallPieChart" class="chart-small"></canvas>
+                </div>
+            </div>
 
-        </main>
-        <footer class="fixed-bottom align-items-center">
-            <i>Ce projet est réalisé dans le cadre du cours "Question Éthique en IA et NTIC" de l'Université Polytechnique de Mons</i>
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h5>Autorisation d’accès à des systèmes tiers</h5>
+                        <p>68% des répondants sont prêts à autoriser un système tiers à accéder à leurs données pour les protéger, ce qui pose un dilemme éthique sur la limite entre protection et intrusion dans la vie privée.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <canvas id="tiersAccessPieChart" class="chart-small"></canvas>
+                </div>
+            </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 order-md-2 d-flex align-items-center">
+                    <div>
+                        <h5>Impact limité sur les usages informatiques</h5>
+                        <p>86% des utilisateurs ne changent pas leur comportement après l’installation d’un antivirus, ce qui peut signifier une confiance excessive dans ces logiciels ou un manque de compréhension des menaces cybernétiques.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1 text-center">
+                    <canvas id="behaviorChangePieChart" class="chart-small"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center bg-light py-3 mt-4 border-top">
+        <small><i>Ce projet est réalisé dans le cadre du cours "Question Éthique en IA et NTIC" de l'Université Polytechnique de Mons</i></small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script>
+        new Chart(document.getElementById('antivirusPieChart'), {
+            type: 'pie',
+            data: {
+                labels: ['Connaissent (8)', 'Ne connaissent pas (20)'],
+                datasets: [{
+                    data: [8, 20],
+                    backgroundColor: ['rgba(54, 162, 235, 0.7)', 'rgba(255, 99, 132, 0.7)'],
+                    borderColor: ['rgba(54, 162, 235, 1)', 'rgba(255, 99, 132, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Compréhension du fonctionnement des antivirus'
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('autoInstallPieChart'), {
+            type: 'pie',
+            data: {
+                labels: ['Utilisent sans l’avoir installé (15)', 'Installé eux-mêmes (7)'],
+                datasets: [{
+                    data: [15, 7],
+                    backgroundColor: ['rgba(255, 206, 86, 0.7)', 'rgba(75, 192, 192, 0.7)'],
+                    borderColor: ['rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: "Origine de l'antivirus utilisé"
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('tiersAccessPieChart'), {
+            type: 'pie',
+            data: {
+                labels: ['Prêts à autoriser (19)', 'Pas prêts (9)'],
+                datasets: [{
+                    data: [19, 9],
+                    backgroundColor: ['rgba(153, 102, 255, 0.7)', 'rgba(255, 159, 64, 0.7)'],
+                    borderColor: ['rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: "Accès aux données par un tiers"
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('behaviorChangePieChart'), {
+            type: 'pie',
+            data: {
+                labels: ['Ne changent pas (19)', 'Changent (3)'],
+                datasets: [{
+                    data: [19, 3],
+                    backgroundColor: ['rgba(255, 99, 132, 0.7)', 'rgba(54, 162, 235, 0.7)'],
+                    borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: "Changement de comportement après installation"
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
 </html>
