@@ -15,3 +15,10 @@ header {
 body {
     background-color: rgba(224, 214, 196, 0.705);
 }
+.chart-small {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
