@@ -23,54 +23,32 @@
 
     <body>
         <header>
-            <nav id="navbar-main" 
-             aria-label="Primary navigation" 
-             class="navbar navbar-main navbar-expand-lg fixed-top ">
-
-             <div class="container postion-fluid">
-                <a class="navbar-brand nav_logo btn" href="index.html">Home</a>
+            <nav id="navbar-main" class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-sm">
+                <div class="container-fluid">
+                    <a class="navbar-brand btn" href="index.html">Home</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_global">
-                    <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                <div class="navbar-collapse collapse p_nav rounded-pill" id="navbar_global">
-                    
-                    <ul class="navbar-nav align-items-lg-center">
-                        <li class="nav-item">
-                            <a href="questionnement.html" style="margin-left:4em">
-                                Questionnement
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="enquete.html" style="margin-left:4em">
-                                Enquête
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="analyse.html" style="margin-left:4em">
-                                Analyse
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="synthese.html" style="margin-left:4em">
-                                Synthèse
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="team.html" style="margin-left:4em">
-                                Notre Équipe
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="sources.html" style="margin-left:4em">
-                                Sources
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbar_global">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="questionnement.html">Questionnement</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEnquete" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Enquête
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownEnquete">
+                                    <li><a class="dropdown-item" href="enquete.html">Enquête</a></li>
+                                    <li><a class="dropdown-item" href="enquetepro.html">Enquête Professionnelle</a></li>
+                                </ul>
+                            </li> 
+                            <li class="nav-item"><a class="nav-link" href="analyse.html">Analyse</a></li>
+                            <li class="nav-item"><a class="nav-link" href="synthese.html">Synthèse</a></li>
+                            <li class="nav-item"><a class="nav-link" href="team.html">Notre Équipe</a></li>
+                            <li class="nav-item"><a class="nav-link" href="sources.html">Sources</a></li>
+                        </ul>
+                    </div>
                 </div>
-                
-            </div>
-
-        </nav>
+            </nav>
         </header>
         <main>
             <!-- Page Content goes here -->
